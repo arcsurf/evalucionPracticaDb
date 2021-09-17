@@ -63,10 +63,10 @@ INSERT INTO users (id, name, email, note_id) VALUES
 	(1, 'usuario1', 'usuario1@notes.com', 1),
   (2, 'usuario1', 'usuario1@notes.com', 2),
   (3, 'usuario1', 'usuario1@notes.com', 3),
-  (4, 'usuario2', 'usuario2@notes.com', 2),
-  (5, 'usuario3', 'usuario3@notes.com', 2),
-  (6, 'usuario3', 'usuario3@notes.com', 3),
-  (7, 'usuario4', 'usuario4@notes.com', 1),
-  (8, 'usuario4', 'usuario4@notes.com', 2),
-  (9, 'usuario4', 'usuario4@notes.com', 3),
-  (10, 'usuario5', 'usuario5@notes.com', 2);
+  (4, 'usuario2', 'usuario2@notes.com', 4),
+  (5, 'usuario3', 'usuario3@notes.com', 5),
+  (6, 'usuario3', 'usuario3@notes.com', 6),
+  (7, 'usuario4', 'usuario4@notes.com', 7),
+  (8, 'usuario4', 'usuario4@notes.com', 8),
+  (9, 'usuario4', 'usuario4@notes.com', 9),
+  (10, 'usuario5', 'usuario5@notes.com', 10);
