@@ -27,6 +27,15 @@ CREATE TABLE note (
   FOREIGN KEY FK2 (category_id) references category(id)
 );
 
+CREATE TABLE noteCategory (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  note_id int(11) NOT NULL,
+  category_id int(11) NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY FK4 (note_id) references note(id),
+  FOREIGN KEY FK5 (category_id) references category(id)
+);
+
 CREATE TABLE users (
   id int(11) NOT NULL AUTO_INCREMENT,
   name varchar(80) NOT NULL,
@@ -58,7 +67,7 @@ INSERT INTO note (id, state_id, creation_date, modification_date, description, r
 	(8, 2, '2021-08-19', '2021-09-21', 'una nota8', 0, 3, 'titulo de una nota8'),
 	(9, 2, '2021-08-19', '2021-09-22', 'una nota9', 0, 3, 'titulo de una nota9'),
 	(10, 3, '2021-08-20', '2021-09-30', 'una nota10', 1, 4, 'titulo de una nota10');
-
+	
 INSERT INTO users (id, name, email, note_id) VALUES
 	(1, 'usuario1', 'usuario1@notes.com', 1),
   (2, 'usuario1', 'usuario1@notes.com', 2),
